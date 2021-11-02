@@ -22,7 +22,7 @@ header{
     width: 100%;
     height: 80px;
     padding: 30px 13px 20px 18px;
-    background-color: transparent;
+    background-color: #00000085;
     position: fixed;
     z-index: 100;
     top: 0;
@@ -305,4 +305,193 @@ main{
     margin: 0px 10px;
     height: 0px;
     border: 1px solid #084154;
+}
+
+/* Featured Products */
+
+.shelf--area {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 590px;
+    padding: 60px 180px 0px 180px;
+}
+.title--area-shelf {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+    height: 20px;
+    margin-bottom: 60px;
+    padding-left: 50px;
+}
+.shelf--title-icon {
+    width: 22px;
+    height: 22px;
+    margin-right: 20px;
+}
+.title--shelf {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 21px;
+    color: #084154;
+}
+.shelf--element-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex: 1;
+    width: 100%;
+    height: auto;
+}
+.shelf--element-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    height: 480px;
+    background: #fff;
+    box-shadow: 0px 4px 15px 7px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+}
+.area-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 24px 0px 10px 0px;
+    margin-bottom: 0px;
+}
+.img--game {
+    width: 85%;
+    height: 300px;
+}
+.area--info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+    padding: 15px 24px;
+    background-color: #f5f5f5;
+    border-top: 2px solid #3EC6E0;
+}
+.infos {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    flex-direction: column;
+}
+.info--name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #084154;
+}
+.info--value {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    color: #084154;
+}
+.buy--button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 45px;
+    background: #3EC6E0;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #fff;
+    border: 0 none;
+    outline: 0;
+    padding: 0px 18px;
+    transition: linear 0.5s;
+}
+.buy--button:hover{
+    cursor: pointer;
+    background-color: #084154;
+}
+.img--icon-confirmed {
+    z-index: 1;
+    position: relative;
+    top: -23px;
+    left: 8px;
+    width: 68px;
+    height: 79px;
+    background-color: transparent;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 68px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.first--block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 500px;
+    height: 68px;
+    background: #084154;
+    padding: 20px 20px 20px 16px;
+}
+.logo--img-footer {
+    width: 43px;
+    height: 28px;
+}
+.second--block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 68px;
+    background: #3EC6E0;
+    padding: 20px 20px 20px 16px;
+}
+.area--text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 300px;
+}
+.text--footer{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #fff;
 }
