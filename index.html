@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="00-lucas-style.css">
     <title>Copia do N1 Rush</title>
 </head>
 <body>
@@ -15,43 +15,43 @@
             </button>
             <img class="icon--Logo" src="./assets/svgs/logo-icon.svg" alt="Icon Logo">
         </div>
-        <div class="button--area">
+        <nav class="button--area">
             <a href="#" class="button--icons">
-                <img class="iconMenu" src="./assets/svgs/paper-plane.svg" alt="Button icon contact"/>
+                <img class="icon-header-manu" src="./assets/svgs/paper-plane.svg" alt="Button icon contact"/>
                 <h2 class="text--icon">CONTATO</h2>
             </a>
             <a href="#" class="button--icons">
-                <img class="iconMenu" src="./assets/svgs/search-solid.svg" alt="Button icon contact"/>
+                <img class="icon-header-manu" src="./assets/svgs/search-solid.svg" alt="Button icon contact"/>
                 <h2 class="text--icon">BUSCAR</h2>
             </a>
-            <a href="#" class="button--icons">
-                <img class="iconMenu" src="./assets/svgs/shopping-bag-solid.svg" alt="Button icon contact"/>
+            <a href="#" class="button--icons" id="car">
+                <img class="icon-header-manu" src="./assets/svgs/shopping-bag-solid.svg" alt="Button icon contact"/>
             </a>
-        </div>
+        </nav>
     </header>
     <main>
         <section class="banner">
-            <div class="banner--img">
+            <div id="banner--container" class="banner--img">
                 <div class="banner--info">
-                    <h1 class="banner--info-h1">MORTAL KOMBAT</h1>
+                    <h1 id="banner--name-1" class="banner--info-h1">MORTAL KOMBAT</h1>
                     <div class="value--area">
                         <h2 class="banner--info-value">299</h2>
                         <h2 class="banner--info-sub-value">,99</h2>
                     </div>
-                    <p class="banner--info-p">
+                    <p id="banner--description" class="banner--info-p">
                         Mortal Kombat X combina uma apresentação cinemática única com uma jogabilidade totalmente nova. Os jogadores podem escolher pela primeira vez diversas variantes de cada personagem, afetando tanto a estratégia como o estilo de luta.
                     </p>
                 </div>
             </div>
             <nav class="slider--nav">
                 <div class="slide--nav-title">
-                    <h1 class="nav--title">MORTAL KOMBAT</h1>
+                    <h1 id="banner--name-2" class="nav--title">MORTAL KOMBAT</h1>
                 </div>
                 <div class="slider--nav-buttons">
-                    <span class="number--block">1 / 2</span>
+                    <span class="number--block"><span id="banner--number">1</span> / 2</span>
                     <div class="button--area-nav">
-                        <button class="button--navigation"><img class="iconMenu" src="./assets/svgs/angle-left-solid.svg" alt="Arrow direction Icon"></button>
-                        <button class="button--navigation"><img class="iconMenu" src="./assets/svgs/angle-right-solid.svg" alt="Arrow direction Icon"></button>
+                        <button class="button--navigation" onclick="PreviousBannerImg()"><img class="iconMenu" src="./assets/svgs/angle-left-solid.svg" alt="Arrow direction Icon"></button>
+                        <button class="button--navigation" onclick="NextBannerImg()"><img class="iconMenu" src="./assets/svgs/angle-right-solid.svg" alt="Arrow direction Icon"></button>
                     </div>
                 </div>
             </nav>
@@ -87,9 +87,8 @@
                             <h1 class="info--name">Donkey Kong Countru Tropical Freeze</h1>
                             <span class="info--value">R$ 200,00</span>
                         </div>
-                        <button class="buy--button">
+                        <button class="buy--button" onclick="BuyProduct(this)">
                             COMPRAR
-                            <!-- <img class="img--icon-confirmed" src="./assets/icons/mario_small.png" alt="Image Mario"> -->
                         </button>
                     </div>
                 </div>
@@ -102,9 +101,8 @@
                             <h1 class="info--name">CyberPunk 2077</h1>
                             <span class="info--value">R$ 200,00</span>
                         </div>
-                        <button class="buy--button">
+                        <button class="buy--button" onclick="BuyProduct(this)">
                             COMPRAR
-                            <!-- <img class="img--icon-confirmed" src="./assets/icons/mario_small.png" alt="Image Mario"> -->
                         </button>
                     </div>
                 </div>
@@ -117,9 +115,8 @@
                             <h1 class="info--name">Outriders</h1>
                             <span class="info--value">R$ 200,00</span>
                         </div>
-                        <button class="buy--button">
+                        <button class="buy--button" onclick="BuyProduct(this)">
                             COMPRAR
-                            <!-- <img class="img--icon-confirmed" src="./assets/icons/mario_small.png" alt="Image Mario"> -->
                         </button>
                     </div>
                 </div>
@@ -136,5 +133,6 @@
             </div>
         </div>
     </footer>
+    <script src="00-lucas-script.js"></script>
 </body>
 </html>
