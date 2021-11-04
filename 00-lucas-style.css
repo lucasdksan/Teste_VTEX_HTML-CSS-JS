@@ -6,6 +6,10 @@
 a{
     text-decoration: none;
 }
+li {
+    text-decoration: none;
+    list-style: none;
+}
 body{
     background: #fff;
     padding: 0px;
@@ -120,7 +124,7 @@ main{
     flex: 1;
     width: 100%;
     height: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 350px;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
@@ -136,6 +140,11 @@ main{
     width: 100%;
     height: 760px;
 }
+.slider{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
 .banner--img{
     width: 100%;
     height: 100vh;
@@ -143,7 +152,6 @@ main{
     align-items: flex-end;
     justify-content: center;
     flex-direction: column;
-    background-image: url("./assets/img/principal_banner_desktop.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -285,6 +293,7 @@ main{
     padding: 10px 19px;
     margin-top: -150px;
     width: 100%;
+    z-index: 2;
 }
 .middle--banner-element {
     display: flex;
@@ -293,6 +302,16 @@ main{
     flex-direction: column;
     width: 480px;
     margin: 0px 10px;
+}
+.box-banner a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.box-banner a img{
+    width: 100%;
+    height: 100%;
 }
 .middle--banner-img {
     width: 100%;
@@ -346,7 +365,7 @@ main{
     flex-direction: row;
     width: 100%;
     height: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
     padding-left: 50px;
 }
 .shelf--title-icon {
@@ -362,7 +381,8 @@ main{
     line-height: 21px;
     color: #084154;
 }
-.shelf--element-area {
+.shelf--element-area,
+.shelf--element-area ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -370,6 +390,13 @@ main{
     flex: 1;
     width: 100%;
     height: auto;
+}
+.shelf--element-area ul li{
+    text-decoration: none;
+    list-style: none;
+}
+.shelf--element-area h2{
+    display: none;
 }
 .shelf--element-item {
     display: flex;
@@ -381,6 +408,7 @@ main{
     background: #fff;
     box-shadow: 0px 4px 15px 7px rgba(0, 0, 0, 0.07);
     border-radius: 10px;
+    margin: 0px 25px;
 }
 .area-img {
     display: flex;
@@ -392,7 +420,7 @@ main{
     padding: 24px 0px 10px 0px;
     margin-bottom: 0px;
 }
-.img--game {
+.area-img img {
     width: 85%;
     height: 300px;
 }
@@ -439,6 +467,20 @@ main{
     height: 45px;
     background: #3EC6E0;
     border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #fff;
+    border: 0 none;
+    outline: 0;
+    padding: 0px 18px;
+    transition: linear 0.5s;
+}
+.buy--button div a{
+    text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 900;

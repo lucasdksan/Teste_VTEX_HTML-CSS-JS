@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="00-lucas-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <title>Copia do N1 Rush</title>
 </head>
 <body>
@@ -31,18 +32,36 @@
     </header>
     <main>
         <section class="banner">
-            <div id="banner--container" class="banner--img">
-                <div class="banner--info">
-                    <h1 id="banner--name-1" class="banner--info-h1">MORTAL KOMBAT</h1>
-                    <div class="value--area">
-                        <h2 class="banner--info-value">299</h2>
-                        <h2 class="banner--info-sub-value">,99</h2>
+            <ul class="slider">
+                <li>
+                    <div class="banner--img" style="background-image: url(./assets/img/principal_banner_desktop.jpg);">
+                        <div class="banner--info">
+                            <h1 class="banner--info-h1">MORTAL KOMBAT</h1>
+                            <div class="value--area">
+                                <h2 class="banner--info-value">299</h2>
+                                <h2 class="banner--info-sub-value">,99</h2>
+                            </div>
+                            <p class="banner--info-p">
+                                Mortal Kombat X combina uma apresentação cinemática única com uma jogabilidade totalmente nova. Os jogadores podem escolher pela primeira vez diversas variantes de cada personagem, afetando tanto a estratégia como o estilo de luta.
+                            </p>
+                        </div>
                     </div>
-                    <p id="banner--description" class="banner--info-p">
-                        Mortal Kombat X combina uma apresentação cinemática única com uma jogabilidade totalmente nova. Os jogadores podem escolher pela primeira vez diversas variantes de cada personagem, afetando tanto a estratégia como o estilo de luta.
-                    </p>
-                </div>
-            </div>
+                </li>
+                <li>
+                    <div class="banner--img" style="background-image: url(./assets/img/principal_banner_desktop_02.jpg);">
+                        <div class="banner--info">
+                            <h1 class="banner--info-h1">RED DEAD 2</h1>
+                            <div class="value--area">
+                                <h2 class="banner--info-value">199</h2>
+                                <h2 class="banner--info-sub-value">,99</h2>
+                            </div>
+                            <p class="banner--info-p">
+                                RDR 2 é um prólogo do primeiro jogo, ou seja, é ambientado um pouco antes da história original. O game se passa em 1899, quando ocorre o declínio do Velho Oeste Americano.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
             <nav class="slider--nav">
                 <div class="slide--nav-title">
                     <h1 id="banner--name-2" class="nav--title">MORTAL KOMBAT</h1>
@@ -50,8 +69,8 @@
                 <div class="slider--nav-buttons">
                     <span class="number--block"><span id="banner--number">1</span> / 2</span>
                     <div class="button--area-nav">
-                        <button class="button--navigation" onclick="PreviousBannerImg()"><img class="iconMenu" src="./assets/svgs/angle-left-solid.svg" alt="Arrow direction Icon"></button>
-                        <button class="button--navigation" onclick="NextBannerImg()"><img class="iconMenu" src="./assets/svgs/angle-right-solid.svg" alt="Arrow direction Icon"></button>
+                        <button onclick="ChangeSliderName()" class="button--navigation slick-prev slick-arrow" type="button" id="previous" aria-label="Previous"><img class="iconMenu" src="./assets/svgs/angle-left-solid.svg" alt="Arrow direction Icon"></button>
+                        <button onclick="ChangeSliderName()" class="button--navigation slick-next slick-arrow" type="button" id="next" aria-label="Next"><img class="iconMenu" src="./assets/svgs/angle-right-solid.svg" alt="Arrow direction Icon"></button>
                     </div>
                 </div>
             </nav>
@@ -133,6 +152,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="00-lucas-script.js"></script>
 </body>
 </html>

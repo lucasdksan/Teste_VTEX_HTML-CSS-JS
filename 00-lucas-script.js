@@ -1,13 +1,18 @@
-const bannerElement = document.getElementById("banner--container");
-const bannerNumber = document.getElementById("banner--number");
-const bannerDescription = document.getElementById("banner--description");
-const bannerName1 = document.querySelector("#banner--name-1");
-const bannerName2 = document.querySelector("#banner--name-2");
-
-
 window.onload = ()=>{
     localStorage.setItem("@N1-RUSH_valueCar", 0);
+    $('.helperComplement').remove();
     return;
+}
+
+function ChangeSliderName(){
+    var name = $("#banner--name-2").text();
+    if(name === "MORTAL KOMBAT"){
+        document.getElementById("banner--name-2").innerHTML = "RED DEAD 2";
+        document.getElementById("banner--number").innerHTML = "2";
+    } else {
+        document.getElementById("banner--number").innerHTML = "1";
+        document.getElementById("banner--name-2").innerHTML = "MORTAL KOMBAT";
+    }
 }
 
 function IncrementCar(){
@@ -29,20 +34,6 @@ function IncrementCar(){
 
 }
 
-function NextBannerImg(){
-    bannerElement.style.backgroundImage = "url(./assets/img/principal_banner_desktop_02.jpg)";
-    bannerNumber.innerHTML = "2";
-    bannerName1.innerHTML = "RED DEAD 2";
-    bannerName2.innerHTML = "RED DEAD 2";
-    bannerDescription.innerHTML = "RDR 2 é um prólogo do primeiro jogo, ou seja, é ambientado um pouco antes da história original. O game se passa em 1899, quando ocorre o declínio do Velho Oeste Americano.";
-}
-function PreviousBannerImg(){
-    bannerElement.style.backgroundImage = "url(./assets/img/principal_banner_desktop.jpg)";
-    bannerNumber.innerHTML = "1";
-    bannerName1.innerHTML = "MORTAL KOMBAT";
-    bannerName2.innerHTML = "MORTAL KOMBAT";
-    bannerDescription.innerHTML = "Mortal Kombat X combina uma apresentação cinemática única com uma jogabilidade totalmente nova. Os jogadores podem escolher pela primeira vez diversas variantes de cada personagem, afetando tanto a estratégia como o estilo de luta.";
-}
 function BuyProduct(element){
     const imgElement = document.createElement("img");
 
@@ -60,3 +51,13 @@ function BuyProduct(element){
 
     IncrementCar();
 }
+
+$('.slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
+    nextArrow: $("#next"),
+    prevArrow: $("#previous"),
+});
