@@ -8,3 +8,7 @@ Como tal, não contém toda a dinâmica do projeto original, apenas a interface 
 Ainda Vou fazer a divisão de elementos para utilizar os recursos da plataforma da VTEX.
 
 A divisão de elementos já foi finalizada. Utilizei corretamente as funções da plataforma da VTEX.
+
+Produzindo a parte do Departamento e suas estilização!
+
+Próximo passo é implementar a pág de produtos.

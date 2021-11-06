@@ -1,6 +1,18 @@
+function CreatedAreaSearch(){
+    let areaSearch = document.querySelectorAll('.busca input');
+    let colectionSearch = document.createElement('div');
+    colectionSearch.classList.add('colectionSearch');
+    colectionSearch.append(areaSearch[0]);
+    colectionSearch.append(areaSearch[1]);
+    $('.busca input').remove();
+    document.querySelector('.busca').append(colectionSearch);
+}
+
 window.onload = ()=>{
     localStorage.setItem("@N1-RUSH_valueCar", 0);
     $('.helperComplement').remove();
+    $('.busca label').remove();
+    CreatedAreaSearch()
     return;
 }
 
@@ -50,6 +62,16 @@ function BuyProduct(element){
     element.append(imgElement);
 
     IncrementCar();
+}
+function SearchActive(){
+    let searchDocument = document.querySelector('.area--search');
+    if(searchDocument.classList.contains('active')){
+        searchDocument.style.left = 0;
+        searchDocument.classList.remove('active');
+    } else {
+        searchDocument.style.left = "-100%";
+        searchDocument.classList.add('active');
+    }
 }
 
 $('.slider').slick({
