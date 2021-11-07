@@ -82,4 +82,5 @@ $('.slider').slick({
     cssEase: 'linear',
     nextArrow: $("#next"),
     prevArrow: $("#previous"),
+    draggable: false,
 });
